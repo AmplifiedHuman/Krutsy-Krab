@@ -63,20 +63,28 @@ hr {
 
 .cover-text {
   color: #f7f7ff;
-  font-size: 2rem;
+  font-size: 1.3rem;
+  margin-bottom: 30px;
 }
+
+#covertitle {
+  font-size: 3.5rem;
+  font-family: "Pacifico", cursive;
+}
+
 .cover-wrapper {
   overflow: hidden;
+  margin-bottom: 30px;
 }
 
 .cover {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   min-height: 50vh;
   background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
     url("../img/cover.jpg");
-  background-position: center;
   background-repeat: repeat-y;
   background-size: cover;
   position: relative;
@@ -91,6 +99,11 @@ p {
   nav {
     flex-direction: column;
     align-items: center;
+    margin-bottom: 10px;
+  }
+
+  #covertitle {
+    font-size: 3rem;
   }
 
   .navigation-links > li {
