@@ -74,7 +74,6 @@ hr {
 
 .cover-wrapper {
   overflow: hidden;
-  margin-bottom: 30px;
 }
 
 .cover {
@@ -91,11 +90,41 @@ hr {
   margin: 0px;
 }
 
-p {
+.intro-container {
+  background-color: #87878c;
+  color: #f7f7ff;
   margin: 0px;
+  display: grid;
+  padding: 10px;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  justify-items: center;
+  align-items: stretch;
+  gap: 20px;
+}
+
+.intro-image-container {
+  display: flex;
+  width: 300px;
+  align-items: center;
+}
+
+.intro-image-container > img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+@media only screen and (max-width: 1200px) {
+  .intro-container {
+    grid-template-columns: 1fr 1fr;
+  }
 }
 
 @media only screen and (max-width: 600px) {
+  .intro-container {
+    grid-template-columns: 1fr;
+  }
+
   nav {
     flex-direction: column;
     align-items: center;
