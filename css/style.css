@@ -102,12 +102,11 @@ nav {
   justify-items: center;
   align-items: center;
   gap: 1rem;
-  /* grid-auto-flow: dense; */
 }
 
 .intro-entry {
   background-color: #83c9c8;
-  padding: 0.45rem;
+  padding-bottom: 1.7rem;
   border-radius: 0.5rem;
 }
 
