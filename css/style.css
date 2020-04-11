@@ -8,6 +8,11 @@ body {
   height: 100%;
 }
 
+/* Misc */
+hr {
+  border-top: 1px solid #1f1f1f;
+}
+
 /* Colour classes */
 .lightpink {
   color: #1c1c1c;
@@ -17,6 +22,11 @@ body {
 .mint {
   background-color: #5c8d8c;
   color: #1c1c1c;
+}
+
+.alternativepink {
+  color: #1c1c1c;
+  background-color: #e1e1e8;
 }
 
 /* Nav bar */
@@ -96,17 +106,20 @@ nav {
 .intro-container {
   color: #1c1c1c;
   margin: 0px;
-  padding: 10px;
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
-  justify-items: center;
+  padding: 8px;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  align-content: space-around;
   align-items: center;
   gap: 1rem;
 }
 
 .intro-entry {
+  margin: 10px;
   background-color: #83c9c8;
   padding-bottom: 1.7rem;
+  width: 300px;
   border-radius: 0.5rem;
 }
 
@@ -126,10 +139,40 @@ nav {
   border-radius: 0.5rem;
 }
 
+#intro-3 {
+  justify-self: strech;
+}
+
+/* Products */
+.product-container {
+  margin: 0px;
+}
+.product-container > h1 {
+  font-size: 2.5em;
+  font-family: "Pacifico", cursive;
+  padding: 30px;
+  text-align: center;
+}
+
+.product-grid {
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  padding: 10px;
+}
+
+.product-image-container {
+  max-height: 400px;
+  overflow: hidden;
+  border-radius: 0.5em;
+}
+
+.product-image-container > img {
+  width: 100%;
+}
+
+/* Media queries */
 @media only screen and (max-width: 600px) {
-  .intro-container {
-    grid-template-columns: 1fr;
-  }
   nav {
     flex-direction: column;
     align-items: center;
