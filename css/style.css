@@ -30,7 +30,7 @@ hr {
 }
 
 .darkpink {
-  background-color: #eb5160;
+  background-color: #ea526f;
   color: #1f1f1f;
 }
 
@@ -164,8 +164,15 @@ nav {
 
 .product-entry {
   border-radius: 0.5em;
-  padding-bottom: 1.7rem;
   margin: 20px;
+}
+
+.product-entry > h2 {
+  font-size: 1em;
+  font-weight: bold;
+  padding: 10px;
+  text-align: center;
+  text-transform: uppercase;
 }
 
 .product-image-container {
@@ -179,18 +186,73 @@ nav {
   width: 100%;
 }
 
+/* locations */
+.location-text {
+  font-size: 1.4em;
+  text-align: center;
+  margin: 20px;
+}
+
+.location-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+}
+
+.location-details {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.location-details > h1 {
+  font-size: 2em;
+  margin-bottom: 30px;
+}
+
+.location-details > p {
+  margin-bottom: 20px;
+}
+
+/* Embed Maps iFrame */
+
+.gmap_canvas {
+  overflow: hidden;
+  display: flex;
+  background: none !important;
+  height: 350px;
+  min-width: 300px;
+  width: 50%;
+  resize: both;
+  overflow: hidden;
+}
+
+.gmap_canvas > iframe {
+  width: 100%;
+}
+
 /* Media queries */
 /* for rescaling images */
-@media only screen and (max-width: 810px) {
+@media only screen and (max-width: 820px) {
+  body {
+    font-size: 0.8rem;
+  }
+
   .product-image-container {
     width: 230px;
     max-height: 300px;
   }
 
   .intro-entry {
-    width: 200px;
+    width: 220px;
+  }
+
+  .location-container {
+    flex-direction: column;
   }
 }
+
 /* for nav bar and hero */
 @media only screen and (max-width: 600px) {
   nav {
