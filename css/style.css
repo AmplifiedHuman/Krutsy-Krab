@@ -29,6 +29,11 @@ hr {
   background-color: #e1e1e8;
 }
 
+.darkpink {
+  background-color: #eb5160;
+  color: #1f1f1f;
+}
+
 /* Nav bar */
 nav {
   width: 100%;
@@ -112,14 +117,13 @@ nav {
   flex-wrap: wrap;
   align-content: space-around;
   align-items: center;
-  gap: 1rem;
 }
 
 .intro-entry {
   margin: 10px;
   background-color: #83c9c8;
   padding-bottom: 1.7rem;
-  width: 300px;
+  width: 350px;
   border-radius: 0.5rem;
 }
 
@@ -139,10 +143,6 @@ nav {
   border-radius: 0.5rem;
 }
 
-#intro-3 {
-  justify-self: strech;
-}
-
 /* Products */
 .product-container {
   margin: 0px;
@@ -155,13 +155,21 @@ nav {
 }
 
 .product-grid {
-  display: grid;
-  gap: 20px;
-  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
   padding: 10px;
 }
 
+.product-entry {
+  border-radius: 0.5em;
+  padding-bottom: 1.7rem;
+  margin: 20px;
+}
+
 .product-image-container {
+  width: 350px;
   max-height: 400px;
   overflow: hidden;
   border-radius: 0.5em;
@@ -172,6 +180,18 @@ nav {
 }
 
 /* Media queries */
+/* for rescaling images */
+@media only screen and (max-width: 810px) {
+  .product-image-container {
+    width: 230px;
+    max-height: 300px;
+  }
+
+  .intro-entry {
+    width: 200px;
+  }
+}
+/* for nav bar and hero */
 @media only screen and (max-width: 600px) {
   nav {
     flex-direction: column;
