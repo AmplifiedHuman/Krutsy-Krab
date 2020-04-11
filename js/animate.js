@@ -1,6 +1,27 @@
 $(window).scroll(function (e) {
   parallax();
+  navbarSticky();
 });
+
+function navbarSticky() {
+  let element = document.getElementsByTagName("nav")[0];
+  console.log(document.getElementsByTagName("nav")[0]);
+  let smallClass = "small";
+  console.log(this.scrollY);
+  let threshold = 7;
+  if (document.body.clientWidth <= 600) {
+    threshold = 146;
+  }
+  // check if classList already contains the small class
+  if (element.classList) {
+    if (window.scrollY > threshold) {
+      element.classList.add(smallClass);
+    }
+    else {
+      element.classList.remove(smallClass);
+    }
+  }
+}
 
 function parallax() {
   var scroll = $(window).scrollTop();
