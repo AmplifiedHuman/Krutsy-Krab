@@ -8,7 +8,7 @@ function navbarSticky() {
   console.log(document.getElementsByTagName("nav")[0]);
   let smallClass = "small";
   console.log(this.scrollY);
-  let threshold = 7;
+  let threshold = 30;
   if (document.body.clientWidth <= 600) {
     threshold = 146;
   }

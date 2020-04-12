@@ -38,6 +38,7 @@ hr {
 nav {
   width: 100%;
   display: flex;
+  transition: all 1s;
 }
 
 .navigation-links {
@@ -57,6 +58,7 @@ nav {
 
 .logo-container {
   width: 100px;
+  transition: all 1s;
 }
 
 .logo-container > img {
@@ -75,11 +77,22 @@ nav {
 }
 
 .small + .cover-wrapper {
-  padding-top: 100px;
+  padding-top: 90px;
+}
+
+nav.small {
+  transition: all 1s;
+  height: 70px;
 }
 
 nav.small li {
-  padding-bottom: 10px;
+  transition: all 1s;
+  padding: 10px;
+}
+
+nav.small > div {
+  transition: all 1s;
+  width: 65px;
 }
 
 /* Legend image */
@@ -322,9 +335,13 @@ footer {
     font-size: 3rem;
   }
 
+  nav {
+    transition: none;
+  }
+
   .navigation-links > li {
     padding: 0px 10px;
-    font-size: 0.8rem;
+    font-size: 0.7rem;
   }
 
   .logo-container {
@@ -335,12 +352,17 @@ footer {
     padding-top: 190px;
   }
 
+  nav.small {
+    height: auto;
+  }
+
   nav.small li {
     padding: 0px 10px;
-    font-size: 0.8rem;
+    font-size: 0.7rem;
   }
 
   nav.small > div {
+    transition: all 1s;
     display: none;
   }
 }
