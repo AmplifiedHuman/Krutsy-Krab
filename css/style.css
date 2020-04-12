@@ -251,6 +251,12 @@ nav.small > div {
 .location-details > h1 {
   font-size: 2em;
   margin-bottom: 30px;
+  transition: 300ms;
+}
+
+.location-details > h1:hover {
+  transform: scaleY(-1);
+  transition: 300ms;
 }
 
 .location-details > p {
@@ -279,6 +285,7 @@ nav.small > div {
 footer {
   padding: 10px;
 }
+
 .icon-container {
   display: flex;
   justify-content: center;
