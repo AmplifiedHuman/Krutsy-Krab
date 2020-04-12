@@ -8,6 +8,27 @@ body {
   height: 100%;
 }
 
+/* Links */
+a {
+  color: #1f1f1f;
+  text-transform: uppercase;
+  text-decoration: none;
+  display: inline-block;
+}
+
+a::after {
+  content: "";
+  width: 0px;
+  height: 2px;
+  display: block;
+  background: #ea526f;
+  transition: 300ms;
+}
+
+a:hover::after {
+  width: 100%;
+}
+
 /* Misc */
 hr {
   border-top: 1px solid #1f1f1f;
@@ -53,7 +74,6 @@ nav {
 
 .navigation-links > li {
   padding: 20px;
-  color: #ea526f;
 }
 
 .logo-container {
@@ -315,7 +335,7 @@ footer {
 }
 
 /* for nav bar and hero */
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 610px) {
   nav {
     flex-direction: column;
     align-items: center;
@@ -341,7 +361,7 @@ footer {
 
   .navigation-links > li {
     padding: 0px 10px;
-    font-size: 0.7rem;
+    font-size: 0.65rem;
   }
 
   .logo-container {
@@ -358,11 +378,16 @@ footer {
 
   nav.small li {
     padding: 0px 10px;
-    font-size: 0.7rem;
+    font-size: 0.65rem;
   }
 
   nav.small > div {
     transition: all 1s;
     display: none;
+  }
+
+  a::after {
+    height: 1px;
+    background-color: #ea526f;
   }
 }
