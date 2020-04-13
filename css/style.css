@@ -130,7 +130,7 @@ nav {
 }
 
 .small + .header-fix {
-  padding-top: 130px;
+  padding-top: 82px;
 }
 
 nav.small {
@@ -294,6 +294,7 @@ footer {
 
 .icon-entry {
   width: 35px;
+  height: 35px;
   margin: 20px;
   display: flex;
 }
@@ -322,6 +323,7 @@ footer {
   display: flex;
   margin: 20px auto;
   width: 40%;
+  height: 40%;
   min-width: 200px;
   max-width: 500px;
 }
