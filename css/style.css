@@ -9,14 +9,14 @@ body {
 }
 
 /* Links */
-a {
+nav a {
   color: #1f1f1f;
   text-transform: uppercase;
   text-decoration: none;
   display: inline-block;
 }
 
-a::after {
+nav a::after {
   content: "";
   width: 0px;
   height: 2px;
@@ -25,7 +25,7 @@ a::after {
   transition: 300ms;
 }
 
-a:hover::after {
+nav a a:hover::after {
   width: 100%;
 }
 
@@ -318,6 +318,11 @@ footer {
   margin: 10px;
 }
 
+.bottom-nav-right a {
+  color: #1f1f1f;
+  text-decoration: none;
+}
+
 /* About Us */
 .big-cake-container {
   display: flex;
@@ -353,6 +358,12 @@ footer {
 .team-entry > p {
   text-align: center;
   margin-bottom: 20px;
+}
+
+/* Terms */
+.terms-container > p {
+  text-align: left;
+  padding: 20px;
 }
 
 /* Media queries */
