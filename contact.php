@@ -3,14 +3,13 @@
 
 <head>
 <?php
-$pageTitle = 'Contact Us';
-include("meta.php");
+    $pageTitle = 'Contact Us';
+    include("meta.php");
 ?>
 </head>
 
 <body class="lightpink">
 <?php include("header.html") ?>
-
     <div class="generic-cover-image contact-cover-image">
         <h1 class="generic-title">Contact Us</h1>
         <h2 class="generic-caption">We're here to help</h2>
@@ -39,3 +38,5 @@ include("meta.php");
     </div>
 <?php include("footer.html") ?>
 </body>
+
+</html>

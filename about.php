@@ -3,8 +3,8 @@
 
 <head>
 <?php 
-$pageTitle = 'About Us';
-include("meta.php");
+    $pageTitle = 'About Us';
+    include("meta.php");
 ?>
 </head>
 
@@ -50,7 +50,6 @@ include("meta.php");
             </div>
         </div>
     </section>
-
 <?php include("footer.html") ?>
 </body>
 
