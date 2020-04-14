@@ -25,7 +25,7 @@ nav a::after {
   transition: 300ms;
 }
 
-nav a a:hover::after {
+nav a:hover::after {
   width: 100%;
 }
 
