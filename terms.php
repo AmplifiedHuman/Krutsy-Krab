@@ -2,30 +2,14 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Pacifico&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/reset.css">
-    <link rel="stylesheet" href="css/style.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script src="js/animate.js"></script>
-    <title>Terms</title>
+<?php 
+    $pageTitle = 'Terms';
+    include("meta.php");
+?>
 </head>
 
 <body class="lightpink">
-    <nav class="lightpink normal-transition">
-        <div class="logo-container">
-            <img src="img/logo.png" alt="logo" class="generic-image">
-        </div>
-        <ul class="navigation-links">
-            <li class="lightpink  normal-transition"><a href="index.html">Home</a></li>
-            <li class="lightpink  normal-transition"><a href="#">Menu</a></li>
-            <li class="lightpink  normal-transition"><a href="about.html">About Us</a></li>
-            <li class="lightpink  normal-transition"><a href="#">Contact</a></li>
-            <li class="lightpink  normal-transition"><a href="#">FAQ</a></li>
-        </ul>
-    </nav>
+<?php include("header.html") ?> 
     <h1 class="generic-title">Terms and Conditions</h1>
     <div class="terms-container normal-text">
         <p>
@@ -71,27 +55,6 @@
             possible.
         </p>
     </div>
-    <footer class="alternativepink">
-        <div class="generic-flex-container icon-container">
-            <div class="icon-entry">
-                <img src="img/fb_icon.svg" alt="facebook-icon" class="generic-image">
-            </div>
-            <div class="icon-entry">
-                <img src="img/twitter_icon.svg" alt="twitter-icon" class="generic-image">
-            </div>
-            <div class="icon-entry">
-                <img src="img/ig_icon.svg" alt="instagram-icon" class="generic-image">
-            </div>
-        </div>
-        <div class="bottom-nav-container">
-            <p class="copyright-text">
-                Copyright © 2020 by Mr Krabs
-            </p>
-            <ul class="bottom-nav-right">
-                <li><a href="terms.html">Terms</a></li>
-                <li><a href="#">FAQ</a></li>
-                <li><a href="#">Support</a></li>
-            </ul>
-        </div>
-    </footer>
+<?php include("footer.html") ?>
 </body>
+</html>
