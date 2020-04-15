@@ -134,7 +134,7 @@ nav {
   transition: all 1s;
 }
 
-/* For minimising the scroll bar */
+/* For minimising the nav bar */
 .small {
   line-height: 50px;
   box-shadow: 0px 1px 4px 0px rgba(50, 50, 50, 0.8);
@@ -144,14 +144,6 @@ nav {
 }
 
 /* For fixing header */
-.small {
-  line-height: 50px;
-  box-shadow: 0px 1px 4px 0px rgba(50, 50, 50, 0.8);
-  position: fixed;
-  top: 0;
-  z-index: 100;
-}
-
 .small + .header-fix {
   padding-top: 82px;
 }
@@ -182,22 +174,19 @@ nav.small > div {
   font-family: "Pacifico", cursive;
 }
 
-.cover-wrapper {
-  overflow: auto;
-}
-
 .cover {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  min-height: 50vh;
+  min-height: 30vh;
   background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
     url("../img/cover.jpg");
   background-repeat: repeat-y;
   background-size: cover;
   margin: 0px;
 }
+
 /* Intro section */
 .intro-text {
   padding: 20px;
