@@ -10,7 +10,7 @@
 
 <body class="lightpink">
 <?php include("header.html") ?>    
-    <div class="cover-wrapper header-fix">
+    <div class="header-fix">
         <div class="cover parallax" id="hero-image">
             <h1 class="cover-text" id="covertitle">Krusty Krab</h1>
             <h1 class="cover-text">Taste of a lifetime.</h1>
