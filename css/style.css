@@ -193,8 +193,6 @@ nav.small > div {
 }
 
 .intro-container {
-  color: #1c1c1c;
-  margin: 0px;
   padding: 8px;
   align-content: space-around;
 }
@@ -204,30 +202,23 @@ nav.small > div {
   background-color: #83c9c8;
   padding-bottom: 1.7rem;
   width: 350px;
-  border-radius: 0.5rem;
 }
 
 .intro-image-container {
   display: flex;
   align-items: center;
   border: 1px solid #f7f7ff;
-  border-radius: 0.5rem;
   max-height: 300px;
   width: 100%;
   overflow: hidden;
 }
 
 /* Products */
-.product-container {
-  margin: 0px;
-}
-
 .product-grid {
   padding: 10px;
 }
 
 .product-entry {
-  border-radius: 0.5em;
   margin: 20px;
 }
 
@@ -241,13 +232,10 @@ nav.small > div {
   width: 350px;
   max-height: 400px;
   overflow: hidden;
-  border-radius: 0.5em;
 }
 
-/* locations */
+/* Locations */
 .location-text {
-  font-size: 1.4em;
-  text-align: center;
   margin: 20px;
 }
 
@@ -277,11 +265,8 @@ nav.small > div {
 }
 
 /* Embed Maps iFrame */
-
-.gmap_canvas {
-  overflow: hidden;
+.map-container {
   display: flex;
-  background: none !important;
   height: 350px;
   min-width: 300px;
   width: 50%;
@@ -289,19 +274,17 @@ nav.small > div {
   overflow: hidden;
 }
 
-.gmap_canvas > iframe {
+.map-container > iframe {
   width: 100%;
 }
 
-/* footer */
-
+/* Footer */
 footer {
   padding: 10px;
   margin-top: auto;
 }
 
 .icon-container {
-  display: flex;
   justify-content: center;
 }
 
@@ -368,11 +351,6 @@ footer {
   margin-bottom: 20px;
 }
 
-.team-entry > p {
-  text-align: center;
-  margin-bottom: 20px;
-}
-
 /* Terms */
 .terms-container > p {
   text-align: left;
@@ -387,7 +365,7 @@ footer {
 .form-outer-container {
   background-color: #b9b9be;
   padding: 20px;
-  /* flex-grow: 2; */
+  flex-grow: 2;
 }
 
 .form-container {
@@ -495,12 +473,6 @@ textarea {
   }
 
   nav.small > div {
-    transition: all 1s;
     display: none;
-  }
-
-  a::after {
-    height: 1px;
-    background-color: #ea526f;
   }
 }
