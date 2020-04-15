@@ -81,7 +81,7 @@ nav a:hover::after {
   align-items: center;
   min-height: 30vh;
   background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
-    url("../img/cover.jpg");
+    url("/img/cover.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   margin: 0px;
@@ -359,7 +359,7 @@ footer {
 /* Contact */
 .contact-cover-image {
   background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
-    url("../img/contact.jpg");
+    url("/img/contact.jpg");
 }
 
 .form-outer-container {

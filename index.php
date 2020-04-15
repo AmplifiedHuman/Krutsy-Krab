@@ -25,20 +25,19 @@
         experimenting with local ingredients and recipes with one goal in mind, to promote our cuisine around the world.
     </div>
     <div class="lightpink generic-flex-container intro-container">
-        <!-- TODO: add alt attribute -->
         <div class="intro-entry rounded">
             <div class="intro-image-container rounded">
-                <img src="img/intro-1.jpg" class="generic-image rounded">
+                <img src="img/intro-1.jpg" class="generic-image rounded" alt="cupcakes">
             </div>
         </div>
         <div class="intro-entry rounded">
             <div class="intro-image-container rounded">
-                <img src="img/intro-2.jpg" class="generic-image rounded">
+                <img src="img/intro-2.jpg" class="generic-image rounded" alt="cupcakes with candles">
             </div>
         </div>
         <div class="intro-entry rounded">
             <div class="intro-image-container rounded">
-                <img src="img/intro-3.jpg" id="intro-3" class="generic-image rounded">
+                <img srec="img/intro-3.jpg" id="intro-3" class="generic-image rounded" alt="brad on rack">
             </div>
         </div>
     </div>
