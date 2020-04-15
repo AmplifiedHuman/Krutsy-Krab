@@ -30,9 +30,11 @@
 
         function printSuccessAndExit($name)
         {
-            print "</div>\n";
-            echo "<h2 class=\"generic-caption\">Your response has been recorded.</h2>";
-            echo "<h2 class=\"generic-caption\">We will be in touch in 1-3 business days.</h2>";
+            echo "\t<div class=\"contact-success\">\n";
+            echo "\t\t<h2 class=\"generic-caption\">Your response has been recorded.</h2>";
+            echo "\t\t<h2 class=\"generic-caption\">We will be in touch in 1-3 business days.</h2>";
+            echo "\t</div>";
+            echo "</div>";
             include("footer.html");
             print "</body>\n\n";
             print "</html>";
@@ -110,7 +112,7 @@
             <label for="message">Message</label>
             <textarea class="text-area" maxlength="2000" name="message" placeholder="Enter your message here" id="message" required>
             </textarea>
-            <input type="submit" class="normal-text rounded submit">
+            <button class="generic-button">Submit</button>
         </form>
 
 HTML;
