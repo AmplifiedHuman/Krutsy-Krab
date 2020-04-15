@@ -37,7 +37,7 @@
         </div>
         <div class="intro-entry rounded">
             <div class="intro-image-container rounded">
-                <img srec="img/intro-3.jpg" id="intro-3" class="generic-image rounded" alt="brad on rack">
+                <img src="img/intro-3.jpg" id="intro-3" class="generic-image rounded" alt="bread on rack">
             </div>
         </div>
     </div>

@@ -29,21 +29,21 @@
         <div class="generic-flex-container team-container">
             <div class="team-entry">
                 <div class="team-image-container">
-                    <img src="img/person1.svg" class="generic-image">
+                    <img src="img/person1.svg" class="generic-image" alt="Susan the baker">
                 </div>
                 <h2>Susan</h2>
                 <p class="normal-text">Baker</p>
             </div>
             <div class="team-entry">
                 <div class="team-image-container">
-                    <img src="img/person2.svg" class="generic-image">
+                    <img src="img/person2.svg" class="generic-image" alt="Michael the chef">
                 </div>
                 <h2>Michael</h2>
                 <p class="normal-text">Chef</p>
             </div>
             <div class="team-entry">
                 <div class="team-image-container">
-                    <img src="img/person3.svg" class="generic-image">
+                    <img src="img/person3.svg" class="generic-image" alt="Alex the waiter">
                 </div>
                 <h2>Alex</h2>
                 <p class="normal-text">Waiter</p>
