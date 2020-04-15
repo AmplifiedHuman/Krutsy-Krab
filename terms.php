@@ -10,7 +10,7 @@
 
 <body class="lightpink">
 <?php include("header.html") ?> 
-    <h1 class="generic-title">Terms and Conditions</h1>
+    <h1 class="generic-title header-fix">Terms and Conditions</h1>
     <div class="terms-container normal-text">
         <p>
             By using this site you are agreeing to follow and abide by our terms and conditions. Krusty Krab is
