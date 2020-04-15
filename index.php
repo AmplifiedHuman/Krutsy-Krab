@@ -43,7 +43,7 @@
         </div>
     </div>
 
-    <div class="alternativepink product-container">
+    <div class="lightgrey product-container">
         <h1 class="generic-title">Our products</h1>
         <div class="generic-flex-container product-grid">
             <div class="product-entry darkpink">
