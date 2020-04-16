@@ -91,6 +91,7 @@
     <div class="generic-flex-container location-container">
         <div class="location-details">
             <h1>Bikini Bottom</h1>
+            <p>Phone: +314 1592653</p>
             <p>University College Dublin, Belfield, Dublin 4, Ireland</p>
         </div>
         <div class="map-container">
