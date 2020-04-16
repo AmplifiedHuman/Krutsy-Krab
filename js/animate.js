@@ -4,15 +4,15 @@ $(window).scroll(function (e) {
 });
 
 function navbarSticky() {
+  // get nav element
   let element = document.getElementsByTagName("nav")[0];
-  console.log(document.getElementsByTagName("nav")[0]);
   let smallClass = "small";
-  console.log(this.scrollY);
+  // threshold for normal layout
   let threshold = 10;
   if (document.body.clientWidth <= 600) {
+    // threshold for small devices
     threshold = 146;
   }
-  // check if classList already contains the small class
   if (element.classList) {
     if (window.scrollY > threshold) {
       element.classList.add(smallClass);
@@ -23,6 +23,7 @@ function navbarSticky() {
   }
 }
 
+// jquery function for parallax effect
 function parallax() {
   var scroll = $(window).scrollTop();
   var screenHeight = $(window).height();

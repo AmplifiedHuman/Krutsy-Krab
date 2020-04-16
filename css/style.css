@@ -193,12 +193,19 @@ nav.small > div {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  min-height: 30vh;
+  min-height: 31vh;
   background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
     url("../img/cover.jpg");
   background-repeat: repeat-y;
   background-size: cover;
   margin: 0px;
+}
+
+.browse-button {
+  width: 25%;
+  padding: 8px;
+  box-shadow: 0px 1px 4px 0px rgba(50, 50, 50, 0.8);
+  max-width: 200px;
 }
 
 /* Intro section */
@@ -244,7 +251,7 @@ nav.small > div {
 
 .product-image-container {
   width: 350px;
-  max-height: 400px;
+  max-height: 360px;
   overflow: hidden;
 }
 

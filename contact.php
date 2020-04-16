@@ -112,7 +112,7 @@
             <label for="message">Message</label>
             <textarea class="text-area" maxlength="2000" name="message" placeholder="Enter your message here" id="message" required>
             </textarea>
-            <button class="generic-button">Submit</button>
+            <button class="generic-button submit-button">Submit</button>
         </form>
 
 HTML;

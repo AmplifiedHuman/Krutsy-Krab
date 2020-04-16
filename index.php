@@ -14,6 +14,9 @@
         <div class="cover parallax" id="hero-image">
             <h1 class="cover-text" id="covertitle">Krusty Krab</h1>
             <h1 class="cover-text">Taste of a lifetime.</h1>
+            <form action="menu.php">
+                <button class="generic-button browse-button lightgrey">Browse</button>
+            </form>
         </div>
     </div>
     <div class="normal-text intro-text">
