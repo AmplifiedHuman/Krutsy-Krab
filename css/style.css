@@ -40,6 +40,10 @@ nav a:hover::after {
   align-items: center;
 }
 
+.generic-grid-container {
+  display: grid;
+}
+
 .generic-image {
   display: block;
   width: 100%;
@@ -202,7 +206,7 @@ nav.small > div {
 }
 
 .browse-button {
-  width: 25%;
+  width: 100%;
   padding: 8px;
   box-shadow: 0px 1px 4px 0px rgba(50, 50, 50, 0.8);
   max-width: 200px;
@@ -411,6 +415,44 @@ textarea {
 .text-area {
   height: 200px;
 }
+
+/* menu */
+.menu-cover-image {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+  url("../img/shop.jpg");
+  color: #f7f7ff;
+  font-size: 1.7em;
+  background-position: center;
+}
+
+.menu-section h1 {
+  font-family: 'Amatic SC', cursive;
+  font-size: 5em;
+  padding: 70px;
+}
+
+.menu-entry-container {
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  padding: 10px;
+  gap: 10px;
+}
+
+.menu-image-container {
+  max-width: 360px;
+}
+
+.menu-entry {
+  text-align: center;
+  margin: auto;
+}
+
+.menu-entry > h2 {
+  width: 100%;
+  margin-top: 10px;
+  font-size: 1.2em;
+}
+
+
 
 /* Media queries */
 /* for rescaling images */
