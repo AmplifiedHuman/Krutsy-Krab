@@ -456,6 +456,10 @@ textarea {
   gap: 10px;
 }
 
+.price {
+  font-size: 1.2em;
+}
+
 .menu-image-container {
   max-width: 350px;
   flex-direction: column;
