@@ -209,7 +209,7 @@
                     <div class="menu-image-container">
                         <img src="img/menu/cupcakes/vanilla.jpg" class="generic-image rounded" alt="vanilla cupcake">
                     </div>
-                    <h2 class="normal-text">Vanilla Cake</h2>
+                    <h2 class="normal-text">Vanilla Cupcake</h2>
                     <p class="normal-text price">€1.30</p>
                 </div>
             </div>
