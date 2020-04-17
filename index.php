@@ -78,12 +78,6 @@
                 </div>
                 <h2 class="normal-text">Desserts</h2>
             </div>
-            <div class="product-entry darkpink rounded">
-                <div class="product-image-container">
-                    <img src="img/pastries.jpg" alt="pastries" class="generic-image rounded">
-                </div>
-                <h2 class="normal-text">Pastries</h2>
-            </div>
         </div>
     </div>
 
@@ -91,7 +85,8 @@
     <div class="generic-flex-container location-container">
         <div class="location-details">
             <h1>Bikini Bottom</h1>
-            <p>Phone: +314 1592653</p>
+            <p>Phone: +314 159265358</p>
+            <p>Email: <a href="mailto:samsepi01@protonmail.ch" id="email">samsepi01@protonmail.ch</a></p>
             <p>University College Dublin, Belfield, Dublin 4, Ireland</p>
         </div>
         <div class="map-container">

@@ -294,6 +294,11 @@ nav.small > div {
   margin-bottom: 20px;
 }
 
+/* Email */
+#email {
+  color: #ea526f;
+}
+
 /* Embed Maps iFrame */
 .map-container {
   display: flex;
@@ -440,12 +445,15 @@ textarea {
   grid-template-columns: repeat(auto-fit, minmax(330px, 1fr));
   justify-items: center;
   justify-content: stretch;
+  align-items: end;
+  align-content: end;
   padding: 10px;
   gap: 10px;
 }
 
 .menu-image-container {
   max-width: 350px;
+  flex-direction: column;
 }
 
 .menu-entry {
