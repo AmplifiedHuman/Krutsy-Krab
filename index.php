@@ -48,36 +48,46 @@
     <div class="lightgrey product-container">
         <h1 class="generic-title">Our products</h1>
         <div class="generic-flex-container product-grid">
-            <div class="product-entry darkpink rounded">
-                <div class="product-image-container">
-                    <img src="img/bread.jpg" alt="bread" class="generic-image rounded">
+            <a href="menu.php#bread">
+                <div class="product-entry darkpink rounded">
+                    <div class="product-image-container">
+                        <img src="img/bread.jpg" alt="bread" class="generic-image rounded">
+                    </div>
+                    <h2 class="normal-text">Bread</h2>
                 </div>
-                <h2 class="normal-text">Bread</h2>
-            </div>
-            <div class="product-entry darkpink rounded">
-                <div class="product-image-container">
-                    <img src="img/cakes.jpg" alt="cakes" class="generic-image rounded">
+            </a>
+            <a href="menu.php#cakes">
+                <div class="product-entry darkpink rounded">
+                    <div class="product-image-container">
+                        <img src="img/cakes.jpg" alt="cakes" class="generic-image rounded">
+                    </div>
+                    <h2 class="normal-text">Cakes</h2>
                 </div>
-                <h2 class="normal-text">Cakes</h2>
-            </div>
-            <div class="product-entry darkpink rounded">
-                <div class="product-image-container">
-                    <img src="img/coffee.jpg" alt="coffee" class="generic-image rounded">
+            </a>
+            <a href="menu.php#coffee">
+                <div class="product-entry darkpink rounded">
+                    <div class="product-image-container">
+                        <img src="img/coffee.jpg" alt="coffee" class="generic-image rounded">
+                    </div>
+                    <h2 class="normal-text">Coffee</h2>
                 </div>
-                <h2 class="normal-text">Coffee</h2>
-            </div>
-            <div class="product-entry darkpink rounded">
-                <div class="product-image-container">
-                    <img src="img/cupcakes.jpg" alt="cupcakes" class="generic-image rounded">
+            </a>
+            <a href="menu.php#cupcakes">
+                <div class="product-entry darkpink rounded">
+                    <div class="product-image-container">
+                        <img src="img/cupcakes.jpg" alt="cupcakes" class="generic-image rounded">
+                    </div>
+                    <h2 class="normal-text">Cupcakes</h2>
                 </div>
-                <h2 class="normal-text">Cupcakes</h2>
-            </div>
-            <div class="product-entry darkpink rounded">
-                <div class="product-image-container">
-                    <img src="img/desserts.jpg" alt="desserts" class="generic-image rounded">
+            </a>
+            <a href="menu.php#desserts">
+                <div class="product-entry darkpink rounded">
+                    <div class="product-image-container">
+                        <img src="img/desserts.jpg" alt="desserts" class="generic-image rounded">
+                    </div>
+                    <h2 class="normal-text">Desserts</h2>
                 </div>
-                <h2 class="normal-text">Desserts</h2>
-            </div>
+            </a>
         </div>
     </div>
 

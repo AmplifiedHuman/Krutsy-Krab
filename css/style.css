@@ -76,6 +76,7 @@ nav a:hover::after {
 .normal-text {
   text-align: center;
   line-height: 1.6rem;
+  text-decoration: none;
 }
 
 .generic-title {
@@ -246,6 +247,10 @@ nav.small > div {
 /* Products */
 .product-grid {
   padding: 10px;
+}
+
+.product-grid > a {
+  text-decoration: none;
 }
 
 .product-entry {

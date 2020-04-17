@@ -16,7 +16,7 @@
         </div>
     </div>
     <div class="menu-container">
-        <section class="menu-section bread-section">
+        <section class="menu-section bread-section" id="bread">
             <h1 class="normal-text">Bread</h1>
             <div class="generic-grid-container menu-entry-container">
                 <div class="menu-entry bread-entry">
@@ -58,7 +58,7 @@
             </div>
         </section>
 
-        <section class="menu-section cakes-section darkgrey">
+        <section class="menu-section cakes-section darkgrey" id="cakes">
             <h1 class="normal-text">Cakes</h1>
             <div class="generic-grid-container menu-entry-container">
                 <div class="menu-entry cake-entry">
@@ -118,7 +118,7 @@
             </div>
         </section>
 
-        <section class="menu-section coffee-section">
+        <section class="menu-section coffee-section" id="coffee">
             <h1 class="normal-text">Coffee</h1>
             <div class="generic-grid-container menu-entry-container">
                 <div class="menu-entry coffee-entry">
@@ -160,8 +160,8 @@
             </div>
         </section>
 
-        <section class="menu-section cupcakes-section darkgrey">
-            <h1 class="normal-text">Cupcakes</h1>
+        <section class="menu-section cupcakes-section darkgrey" id="cupcakes">
+            <h1 class="normal-text"><a id="cupcakes">Cupcakes</a></h1>
             <div class="generic-grid-container menu-entry-container">
                 <div class="menu-entry cupcake-entry">
                     <div class="menu-image-container">
@@ -190,7 +190,7 @@
             </div>
         </section>
 
-        <section class="menu-section desserts-section">
+        <section class="menu-section desserts-section" id="desserts">
             <h1 class="normal-text">Desserts</h1>
             <div class="generic-grid-container menu-entry-container">
                 <div class="menu-entry dessert-entry">
