@@ -5,11 +5,12 @@ body {
   margin: 0px;
   padding: 0px;
   width: 100%;
-  height: 100%;
   /* for making footer stick to the bottom */
   display:flex;
   flex-direction:column;
+  min-height: 100vh;
 }
+
 
 /* Links in navbar */
 nav a {
@@ -99,8 +100,6 @@ nav a:hover::after {
   justify-content: center;
   align-items: center;
   min-height: 30vh;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
-    url("../img/cover.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   margin: 0px;
@@ -164,7 +163,7 @@ nav {
   box-shadow: 0px 1px 4px 0px rgba(50, 50, 50, 0.8);
   position: fixed;
   top: 0;
-  z-index: 100;
+  z-index: 2;
 }
 
 /* For fixing header */
@@ -272,7 +271,7 @@ nav.small > div {
 
 .product-image-container > span {
   transform: translate(-50%, -50%);
-  z-index: 10;
+  z-index: 3;
   opacity: 0;
   position: absolute;
   top: 50%;
@@ -390,7 +389,7 @@ footer {
   width: 40%;
   height: 40%;
   min-width: 200px;
-  max-width: 500px;
+  max-height: 500px;
 }
 
 .team-title,
@@ -532,14 +531,12 @@ textarea {
 
 .field-container > input {
   width: 100%;
-  /* max-width: 500px; */
   font-size: 1em;
   font-weight: normal;
 }
 
 .field-container > button {
   width: 400px;
-  /* max-width: 500px; */
 }
 
 .field-container > label {
@@ -547,6 +544,14 @@ textarea {
   padding: 10px 0px;
   align-self: flex-start;
   font-weight: normal;
+}
+
+.login-error {
+  color: #ea526f;
+}
+
+.login-success {
+  color: #55f340;
 }
 
 
