@@ -8,23 +8,55 @@
     ?>
 </head>
 
-<body>
+<body class="lightpink">
     <?php
-    session_start();
+    if (session_status() == PHP_SESSION_NONE) {
+        session_start();
+    }
     // redirect if unauthorised
     if (!isset($_SESSION['loggedIn'])) {
         header('Location: index.php');
         exit;
     }
     ?>
-
-    
+    <?php include("header.php") ?>
+    <h1 class="generic-title header-fix">Admin Panel</h1>
     <?php
-    session_destroy();
-    echo "<h1>Hey there admin!</h1>";
-    // Redirect to the login page:
-    header("refresh:5;url=index.php");
+    include("connectDB.php");
+    $conn = connectToDB();
+    $result = mysqli_query($conn, 'SELECT * FROM contact_responses ORDER BY date DESC');
+    if ($result) {
+        if (mysqli_num_rows($result) <= 0) {
+            echo '<h2 class="generic-caption">You have no messages</h2>';
+        } else {
+            echo '<h2 class="generic-caption">Your Messages</h2>';
+            print "<table class=\"message-table\">\n";
+            print "        <tr>\n";
+            print "            <th scope=\"col\">First Name</th>\n";
+            print "            <th scope=\"col\">Last Name</th>\n";
+            print "            <th scope=\"col\">Email</th>\n";
+            print "            <th scope=\"col\">Enquiry</th>\n";
+            print "            <th scope=\"col\">Message</th>\n";
+            print "            <th scope=\"col\">Date</th>\n";
+            print "        </tr>";
+            while ($row = mysqli_fetch_array($result)) {
+                print("<tr class='normal-text'>\n");
+                printf("<td>%s</td>\n", $row['firstname']);
+                printf("<td>%s</td>\n", $row['lastname']);
+                printf("<td><a href=\"mailto:%s\" class=\"email\">%s</a></td>\n", $row['email'], $row['email']);
+                printf("<td>%s</td>\n", $row['enquiry']);
+                printf("<td class=\"message\">%s</td>\n", $row['message']);
+                printf("<td>%s</td>\n", $row['date']);
+                print("</tr>\n");
+            }
+            print "    </table> ";
+        }
+    } else {
+        echo "<p>Querry Error</p>";
+    }
+    mysqli_close($conn);
     ?>
+    <?php include("footer.html") ?>
 </body>
 
 </html>

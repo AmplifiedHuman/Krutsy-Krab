@@ -9,7 +9,7 @@
 </head>
 
 <body class="lightpink">
-<?php include("header.html") ?> 
+<?php include("header.php") ?> 
     <h1 class="generic-title header-fix">Terms and Conditions</h1>
     <div class="terms-container normal-text">
         <p>

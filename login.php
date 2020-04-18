@@ -9,7 +9,7 @@
 </head>
 
 <body class="lightpink">
-    <?php include("header.html") ?>
+    <?php include("header.php") ?>
     <div class="form-outer-container header-fix login-container">
         <h1 class="generic-title">Staff Login</h1>
         <form class="login-form darkgrey" action="auth.php" method="POST">
@@ -25,16 +25,18 @@
                 <button class="generic-button">Login</button>
             </div>
             <?php
+            if (session_status() == PHP_SESSION_NONE) {
                 session_start();
-                if (isset($_SESSION['attempt']) && $_SESSION['attempt']) {
-                    if (!isset($_SESSION['loggedIn']) || !$_SESSION['loggedIn']) {
-                        echo '<p class="login-error">Incorrect username or password.</p>';
-                        $_SESSION['attempt'] = FALSE;
-                        unset($_SESSION['attempt']);
-                    } else if (isset($_SESSION['loggedIn']) && $_SESSION['loggedIn']) {
-                        echo '<p class="login-success">You\'re already logged in.</p>';
-                    }
+            }
+            if (isset($_SESSION['attempt']) && $_SESSION['attempt']) {
+                if (!isset($_SESSION['loggedIn']) || !$_SESSION['loggedIn']) {
+                    echo '<p class="login-error">Incorrect username or password.</p>';
+                    $_SESSION['attempt'] = FALSE;
+                    unset($_SESSION['attempt']);
+                } else if (isset($_SESSION['loggedIn']) && $_SESSION['loggedIn']) {
+                    echo '<p class="login-success">You\'re already logged in.</p>';
                 }
+            }
             ?>
         </form>
     </div>

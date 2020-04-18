@@ -9,7 +9,7 @@
 </head>
 
 <body class="lightpink">
-    <?php include("header.html") ?>
+    <?php include("header.php") ?>
     <div class="header-fix">
         <div class="generic-cover-image contact-cover-image">
             <h1 class="generic-title">Contact Us</h1>
@@ -18,6 +18,7 @@
     </div>
     <div class="form-outer-container generic-flex-container">
         <?php
+        include("connectDB.php");
         function printErrorAndExit()
         {
             echo "<h2 class=\"generic-caption\">Sorry, an error occured.</h2>";
@@ -79,17 +80,6 @@
             $emailBody .= "Message:\n\n $message";
             return mail($myEmail, $enquiry, $emailBody);
         }
-
-        function connectToDB()
-        {
-            ***REMOVED***
-            if (mysqli_connect_errno()) {
-                return null;
-            }
-            return $con;
-        }
-
-
 
         if (empty($_POST)) {
             $htmlForm = <<<HTML

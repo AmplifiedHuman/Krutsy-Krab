@@ -9,7 +9,7 @@
 </head>
 
 <body class="lightpink">
-    <?php include("header.html") ?>
+    <?php include("header.php") ?>
     <div class="header-fix">
         <div class="cover parallax" id="hero-image">
             <h1 class="cover-text" id="covertitle">Krusty Krab</h1>
@@ -111,7 +111,7 @@
         <div class="location-details">
             <h1>Bikini Bottom</h1>
             <p>Phone: +314 159265358</p>
-            <p>Email: <a href="mailto:samsepi01@protonmail.ch" id="email">samsepi01@protonmail.ch</a></p>
+            <p>Email: <a href="mailto:samsepi01@protonmail.ch" class="email">samsepi01@protonmail.ch</a></p>
             <p>University College Dublin, Belfield, Dublin 4, Ireland</p>
         </div>
         <div class="map-container">

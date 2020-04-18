@@ -4,14 +4,7 @@
  * ***REMOVED*** 
  */
 // connect to DB function
-function connectToDB()
-{
-    ***REMOVED***
-    if (mysqli_connect_errno()) {
-        return NULL;
-    }
-    return $con;
-}
+include("connectDB.php");
 
 function redirectToLoginPage($conn, $stmt) {
     if (isset($stmt)) {

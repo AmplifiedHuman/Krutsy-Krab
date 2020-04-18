@@ -9,7 +9,7 @@
 </head>
 
 <body class="lightpink">
-    <?php include("header.html") ?>
+    <?php include("header.php") ?>
     <h1 class="generic-title team-title header-fix">Krusty Krab</h1>
     <div class="big-cake-container">
         <img src="img/big_cake.svg" alt="big-cake" class="generic-image">

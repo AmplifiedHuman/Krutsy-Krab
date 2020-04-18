@@ -9,7 +9,7 @@
 </head>
 
 <body>
-    <?php include("header.html") ?>
+    <?php include("header.php") ?>
     <div class="header-fix">
         <div class="generic-cover-image menu-cover-image">
             <h1 class="generic-title">Menu</h1>
