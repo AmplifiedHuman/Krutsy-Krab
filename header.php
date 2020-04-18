@@ -1,6 +1,6 @@
     <nav class="lightpink normal-transition">
         <div class="logo-container">
-            <img src="img/logo.png" alt="logo" class="generic-image">
+            <img src="img/nav/logo.png" alt="logo" class="generic-image">
         </div>
         <ul class="navigation-links">
             <li class="lightpink normal-transition"><a href="index.php">Home</a></li>

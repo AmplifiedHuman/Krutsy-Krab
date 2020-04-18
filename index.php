@@ -30,17 +30,17 @@
     <div class="lightpink generic-flex-container intro-container">
         <div class="intro-entry rounded">
             <div class="intro-image-container rounded">
-                <img src="img/intro-1.jpg" class="generic-image rounded" alt="cupcakes">
+                <img src="img/index/intro-1.jpg" class="generic-image rounded" alt="cupcakes">
             </div>
         </div>
         <div class="intro-entry rounded">
             <div class="intro-image-container rounded">
-                <img src="img/intro-2.jpg" class="generic-image rounded" alt="cupcakes with candles">
+                <img src="img/index/intro-2.jpg" class="generic-image rounded" alt="cupcakes with candles">
             </div>
         </div>
         <div class="intro-entry rounded">
             <div class="intro-image-container rounded">
-                <img src="img/intro-3.jpg" id="intro-3" class="generic-image rounded" alt="bread on rack">
+                <img src="img/index/intro-3.jpg" id="intro-3" class="generic-image rounded" alt="bread on rack">
             </div>
         </div>
     </div>
@@ -54,7 +54,7 @@
                         <span>
                             <h1 class="generic-title">Fresh Bread</h1>
                         </span>
-                        <img src="img/bread.jpg" alt="bread" class="generic-image rounded">
+                        <img src="img/index/bread.jpg" alt="bread" class="generic-image rounded">
                     </div>
                     <h2 class="normal-text">Bread</h2>
                 </div>
@@ -65,7 +65,7 @@
                         <span>
                             <h1 class="generic-title">Handmade Cakes</h1>
                         </span>
-                        <img src="img/cakes.jpg" alt="cakes" class="generic-image rounded">
+                        <img src="img/index/cakes.jpg" alt="cakes" class="generic-image rounded">
                     </div>
                     <h2 class="normal-text">Cakes</h2>
                 </div>
@@ -76,7 +76,7 @@
                         <span>
                             <h1 class="generic-title">Hot Coffee</h1>
                         </span>
-                        <img src="img/coffee.jpg" alt="coffee" class="generic-image rounded">
+                        <img src="img/index/coffee.jpg" alt="coffee" class="generic-image rounded">
                     </div>
                     <h2 class="normal-text">Coffee</h2>
                 </div>
@@ -87,7 +87,7 @@
                         <span>
                             <h1 class="generic-title">Sweet Cupcakes</h1>
                         </span>
-                        <img src="img/cupcakes.jpg" alt="cupcakes" class="generic-image rounded">
+                        <img src="img/index/cupcakes.jpg" alt="cupcakes" class="generic-image rounded">
                     </div>
                     <h2 class="normal-text">Cupcakes</h2>
                 </div>
@@ -98,7 +98,7 @@
                         <span>
                             <h1 class="generic-title">Homemade Desserts</h1>
                         </span>
-                        <img src="img/desserts.jpg" alt="desserts" class="generic-image rounded">
+                        <img src="img/index/desserts.jpg" alt="desserts" class="generic-image rounded">
                     </div>
                     <h2 class="normal-text">Desserts</h2>
                 </div>

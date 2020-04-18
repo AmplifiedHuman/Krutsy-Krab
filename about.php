@@ -12,7 +12,7 @@
     <?php include("header.php") ?>
     <h1 class="generic-title team-title header-fix">Krusty Krab</h1>
     <div class="big-cake-container">
-        <img src="img/big_cake.svg" alt="big-cake" class="generic-image">
+        <img src="img/team/big_cake.svg" alt="big-cake" class="generic-image">
     </div>
     <div class="about-content normal-text">
         Krusty Krab is a sweet local family owned bakery located in Bikini Bottom. We pride ourselves with
@@ -29,21 +29,21 @@
         <div class="generic-flex-container team-container">
             <div class="team-entry">
                 <div class="team-image-container">
-                    <img src="img/person1.svg" class="generic-image" alt="Susan the baker">
+                    <img src="img/team/person1.svg" class="generic-image" alt="Susan the baker">
                 </div>
                 <h2>Susan</h2>
                 <p class="normal-text">Baker</p>
             </div>
             <div class="team-entry">
                 <div class="team-image-container">
-                    <img src="img/person2.svg" class="generic-image" alt="Michael the chef">
+                    <img src="img/team/person2.svg" class="generic-image" alt="Michael the chef">
                 </div>
                 <h2>Michael</h2>
                 <p class="normal-text">Chef</p>
             </div>
             <div class="team-entry">
                 <div class="team-image-container">
-                    <img src="img/person3.svg" class="generic-image" alt="Alex the waiter">
+                    <img src="img/team/person3.svg" class="generic-image" alt="Alex the waiter">
                 </div>
                 <h2>Alex</h2>
                 <p class="normal-text">Waiter</p>

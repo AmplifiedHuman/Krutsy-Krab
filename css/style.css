@@ -204,7 +204,7 @@ nav.small>div {
   align-items: center;
   min-height: 31vh;
   background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
-    url("../img/cover.jpg");
+    url("../img/cover/cover.jpg");
   background-repeat: repeat-y;
   background-size: cover;
   margin: 0px;
@@ -423,7 +423,7 @@ footer {
 /* Contact */
 .contact-cover-image {
   background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
-    url("../img/contact.jpg");
+    url("../img/cover/contact.jpg");
 }
 
 .form-outer-container {
@@ -458,7 +458,7 @@ textarea {
 /* menu */
 .menu-cover-image {
   background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
-    url("../img/shop.jpg");
+    url("../img/cover/shop.jpg");
   color: #f7f7ff;
   font-size: 1.7em;
   background-position: center;
