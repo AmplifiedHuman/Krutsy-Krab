@@ -1,5 +1,5 @@
 <?php
-
+session_start();
 /**
  * ***REMOVED*** 
  */
@@ -16,7 +16,6 @@ function redirectToLoginPage($conn, $stmt) {
     exit;
 }
 
-session_start();
 $conn = connectToDB();
 // set attempt variable
 $_SESSION['attempt'] = TRUE;

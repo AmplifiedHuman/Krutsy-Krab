@@ -1,3 +1,4 @@
+<?php session_start(); ?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -25,9 +26,6 @@
                 <button class="generic-button">Login</button>
             </div>
             <?php
-            if (session_status() == PHP_SESSION_NONE) {
-                session_start();
-            }
             if (isset($_SESSION['attempt']) && $_SESSION['attempt']) {
                 if (!isset($_SESSION['loggedIn']) || !$_SESSION['loggedIn']) {
                     echo '<p class="login-error">Incorrect username or password.</p>';

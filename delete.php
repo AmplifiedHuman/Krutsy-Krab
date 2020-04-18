@@ -1,4 +1,5 @@
 <?php
+session_start();
 function redirectToAdminPage($conn, $stmt)
 {
     if (isset($stmt)) {
@@ -16,9 +17,6 @@ function checkAndResetAutoIncrement($conn) {
     }
 }
 
-if (session_status() == PHP_SESSION_NONE) {
-    session_start();
-}
 // redirect if unauthorised
 if (!isset($_SESSION['loggedIn'])) {
     header('Location: index.php');

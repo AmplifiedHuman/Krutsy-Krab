@@ -8,6 +8,7 @@ $meta = <<<HTML
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <link rel="icon" type="image/png" href="img/favicon.png">
     <script src="js/animate.js"></script>
 
 HTML;

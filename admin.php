@@ -1,3 +1,4 @@
+<?php session_start(); ?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -10,9 +11,6 @@
 
 <body class="lightpink">
     <?php
-    if (session_status() == PHP_SESSION_NONE) {
-        session_start();
-    }
     // redirect if unauthorised
     if (!isset($_SESSION['loggedIn'])) {
         header('Location: index.php');
@@ -50,7 +48,7 @@
                 printf("<td>%s</td>\n", $row['date']);
                 echo '<td>';
                 echo '<form action="delete.php" method="POST">';
-                echo '<input type="hidden" name="id" value="'. $row['id'] . '">';
+                echo '<input type="hidden" name="id" value="' . $row['id'] . '">';
                 echo '<button>Delete</button>';
                 echo '</form>';
                 echo '</td>';
