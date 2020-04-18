@@ -9,6 +9,13 @@ function redirectToAdminPage($conn, $stmt)
     exit;
 }
 
+function checkAndResetAutoIncrement($conn) {
+    $result = mysqli_query($conn, 'SELECT * FROM contact_responses');
+    if (mysqli_num_rows($result) == 0) {
+        mysqli_query($conn, 'ALTER TABLE contact_responses AUTO_INCREMENT = 1');
+    }
+}
+
 if (session_status() == PHP_SESSION_NONE) {
     session_start();
 }
@@ -24,10 +31,9 @@ if ($conn && !isset($_POST['id'])) {
     redirectToAdminPage($conn, NULL);
 }
 $id=$_POST['id'];
-echo var_dump($_POST['id']);
 $stmt = mysqli_prepare($conn, 'DELETE FROM contact_responses WHERE id = ?');
 mysqli_stmt_bind_param($stmt, 'i', $id);
 mysqli_stmt_execute($stmt);
+checkAndResetAutoIncrement($conn);
 redirectToAdminPage($conn, $stmt);
-
 ?>
