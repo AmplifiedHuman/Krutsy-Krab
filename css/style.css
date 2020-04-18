@@ -565,7 +565,7 @@ td {
 }
 
 table {
-  margin: 10px;
+  margin: 10px auto;
 }
 
 th {
@@ -598,6 +598,10 @@ td {
 
   .location-container {
     flex-direction: column;
+  }
+
+  table {
+    font-size: 0.8em;
   }
 }
 
@@ -663,9 +667,13 @@ td {
   .field-container>button {
     width: 190px;
   }
+
+  table {
+    font-size: 0.7em;
+  }
 }
 
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 420px) {
   .navigation-links>li {
     padding: 0px 5px;
     font-size: 0.55rem;
@@ -677,6 +685,6 @@ td {
   }
 
   table {
-    font-size: 0.5em;
+    font-size: 0.48em;
   }
 }

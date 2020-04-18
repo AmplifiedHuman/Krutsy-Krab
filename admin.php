@@ -38,6 +38,7 @@
             print "            <th scope=\"col\">Enquiry</th>\n";
             print "            <th scope=\"col\">Message</th>\n";
             print "            <th scope=\"col\">Date</th>\n";
+            print "            <th scope=\"col\">Delete</th>\n";
             print "        </tr>";
             while ($row = mysqli_fetch_array($result)) {
                 print("<tr class='normal-text'>\n");
@@ -47,6 +48,12 @@
                 printf("<td>%s</td>\n", $row['enquiry']);
                 printf("<td class=\"message\">%s</td>\n", $row['message']);
                 printf("<td>%s</td>\n", $row['date']);
+                echo '<td>';
+                echo '<form action="delete.php" method="POST">';
+                echo '<input type="hidden" name="id" value="'. $row['id'] . '">';
+                echo '<button>Delete</button>';
+                echo '</form>';
+                echo '</td>';
                 print("</tr>\n");
             }
             print "    </table> ";
