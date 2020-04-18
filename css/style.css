@@ -11,6 +11,18 @@ body {
   min-height: 100vh;
 }
 
+h1 {
+  font-size: 2.5em;
+}
+
+h2 {
+  font-size: 2.0em;
+}
+
+h3 {
+  font-size: 1.15em;
+}
+
 
 /* Links in navbar */
 nav a {
@@ -256,9 +268,8 @@ nav.small>div {
   margin: 20px;
 }
 
-.product-entry>h2 {
-  font-weight: bold;
-  padding: 10px;
+.product-entry>h3 {
+  padding: 5px;
   text-transform: uppercase;
 }
 
@@ -279,7 +290,7 @@ nav.small>div {
   transition: all 0.5s ease;
 }
 
-.product-image-container h1 {
+.product-image-container h2 {
   margin: 0;
   color: #f7f7ff;
 }
@@ -307,13 +318,12 @@ nav.small>div {
   align-items: flex-start;
 }
 
-.location-details>h1 {
-  font-size: 2em;
+.location-details>h2 {
   margin-bottom: 30px;
   transition: 300ms;
 }
 
-.location-details>h1:hover {
+.location-details>h2:hover {
   transform: scaleY(-1);
   transition: 300ms;
 }
@@ -578,7 +588,48 @@ td {
   padding: 4px;
 }
 
+/* FAQ */
+.faq-cover-image {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    url("../img/cover/cake.jpg");
+  background-position: center;
+  color: #f7f7ff;
+}
 
+.faq-section {
+  margin: 30px 15%;
+}
+
+.toggle {
+  border-bottom: 1px solid darkgrey;
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+  overflow: hidden;
+}
+
+.question {
+  margin-top: 20px;
+  border-top: 1px solid darkgrey;
+  padding-top: 20px;
+  cursor: pointer;
+}
+
+.answer {
+  position:absolute;
+  opacity: 0;
+  padding-top: 20px;
+  font-size: 0.8em;
+  max-height: 0;
+  overflow: hidden;
+}
+
+.show {
+  position: static;
+  opacity: 1;
+  transform: scaleY(1);
+  transition: opacity 0.3s ease-in, max-height 0.3s ease-in-out;
+  max-height: 300px;
+}
 
 /* Media queries */
 /* for rescaling images */

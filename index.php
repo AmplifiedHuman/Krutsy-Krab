@@ -13,7 +13,7 @@
     <div class="header-fix">
         <div class="cover parallax" id="hero-image">
             <h1 class="cover-text" id="covertitle">Krusty Krab</h1>
-            <h1 class="cover-text">Taste of a lifetime.</h1>
+            <h2 class="cover-text">Taste of a lifetime.</h2>
             <form action="menu.php">
                 <button class="generic-button browse-button lightgrey">Browse</button>
             </form>
@@ -52,64 +52,64 @@
                 <div class="product-entry darkpink rounded">
                     <div class="product-image-container">
                         <span>
-                            <h1 class="generic-title">Fresh Bread</h1>
+                            <h2 class="generic-title">Fresh Bread</h2>
                         </span>
                         <img src="img/index/bread.jpg" alt="bread" class="generic-image rounded">
                     </div>
-                    <h2 class="normal-text">Bread</h2>
+                    <h3 class="normal-text">Bread</h3>
                 </div>
             </a>
             <a href="menu.php#cakes">
                 <div class="product-entry darkpink rounded">
                     <div class="product-image-container">
                         <span>
-                            <h1 class="generic-title">Handmade Cakes</h1>
+                            <h2 class="generic-title">Handmade Cakes</h2>
                         </span>
                         <img src="img/index/cakes.jpg" alt="cakes" class="generic-image rounded">
                     </div>
-                    <h2 class="normal-text">Cakes</h2>
+                    <h3 class="normal-text">Cakes</h3>
                 </div>
             </a>
             <a href="menu.php#coffee">
                 <div class="product-entry darkpink rounded">
                     <div class="product-image-container">
                         <span>
-                            <h1 class="generic-title">Hot Coffee</h1>
+                            <h2 class="generic-title">Hot Coffee</h2>
                         </span>
                         <img src="img/index/coffee.jpg" alt="coffee" class="generic-image rounded">
                     </div>
-                    <h2 class="normal-text">Coffee</h2>
+                    <h3 class="normal-text">Coffee</h3>
                 </div>
             </a>
             <a href="menu.php#cupcakes">
                 <div class="product-entry darkpink rounded">
                     <div class="product-image-container">
                         <span>
-                            <h1 class="generic-title">Sweet Cupcakes</h1>
+                            <h2 class="generic-title">Sweet Cupcakes</h2>
                         </span>
                         <img src="img/index/cupcakes.jpg" alt="cupcakes" class="generic-image rounded">
                     </div>
-                    <h2 class="normal-text">Cupcakes</h2>
+                    <h3 class="normal-text">Cupcakes</h3>
                 </div>
             </a>
             <a href="menu.php#desserts">
                 <div class="product-entry darkpink rounded">
                     <div class="product-image-container">
                         <span>
-                            <h1 class="generic-title">Homemade Desserts</h1>
+                            <h2 class="generic-title">Homemade Desserts</h2>
                         </span>
                         <img src="img/index/desserts.jpg" alt="desserts" class="generic-image rounded">
                     </div>
-                    <h2 class="normal-text">Desserts</h2>
+                    <h3 class="normal-text">Desserts</h3>
                 </div>
             </a>
         </div>
     </div>
 
-    <h1 class="normal-text location-text">You can find us at</h1>
+    <h3 class="normal-text location-text">You can find us at</h3>
     <div class="generic-flex-container location-container">
         <div class="location-details">
-            <h1>Bikini Bottom</h1>
+            <h2>Bikini Bottom</h2>
             <p>Phone: +314 159265358</p>
             <p>Email: <a href="mailto:samsepi01@protonmail.ch" class="email">samsepi01@protonmail.ch</a></p>
             <p>University College Dublin, Belfield, Dublin 4, Ireland</p>

@@ -86,9 +86,9 @@
         <form name="contact-form" class="form-container rounded normal-text" method="POST"
         onsubmit="return validateForm()" action="#">
             <label for="firstname">First Name</label>
-            <input type="text" name="firstname" id="firstname" required>
+            <input type="text" name="firstname" id="firstname" pattern="[A-Za-z]+" title="Letters" required>
             <label for="lastname">Last Name</label>
-            <input type="text" name="lastname"  id="lastname" required>
+            <input type="text" name="lastname"  id="lastname" pattern="[A-Za-z]+" title="Letters" required>
             <label for="email">Email</label>
             <input type="email" name="email" id="email" required>
             <label for="enquiry">Enquiry</label>
