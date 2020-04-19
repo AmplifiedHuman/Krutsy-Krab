@@ -1,4 +1,11 @@
-<?php session_start(); ?>
+<?php session_start();
+// redirect if unauthorised
+if (!isset($_SESSION['loggedIn'])) {
+    header('Location: index.php');
+    exit;
+}
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -10,13 +17,6 @@
 </head>
 
 <body class="lightpink">
-    <?php
-    // redirect if unauthorised
-    if (!isset($_SESSION['loggedIn'])) {
-        header('Location: index.php');
-        exit;
-    }
-    ?>
     <?php include("header.php") ?>
     <h1 class="generic-title header-fix">Admin Panel</h1>
     <?php
