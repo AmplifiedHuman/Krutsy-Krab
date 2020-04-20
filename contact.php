@@ -44,7 +44,7 @@
         if (!isset($_SESSION['contacted'])) {
             $htmlForm = <<<HTML
         <form name="contact-form" class="form-container rounded normal-text" method="POST"
-        onsubmit="return validateForm()" action="sendContact.php">
+        onsubmit="return validateForm()" action="sendcontact.php">
             <label for="firstname">First Name</label>
             <input type="text" name="firstname" id="firstname" pattern="[A-Za-z]+" title="Letters" required>
             <label for="lastname">Last Name</label>

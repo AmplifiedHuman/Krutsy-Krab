@@ -23,7 +23,7 @@ if (!isset($_SESSION['loggedIn'])) {
     exit;
 }
 
-include('connectDB.php');
+include('connectdb.php');
 $conn=connectToDB();
 if ($conn && !isset($_POST['id'])) {
     redirectToAdminPage($conn, NULL);

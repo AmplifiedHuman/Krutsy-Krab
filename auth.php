@@ -4,7 +4,7 @@ session_start();
  * ***REMOVED*** 
  */
 // connect to DB function
-include("connectDB.php");
+include("connectdb.php");
 
 function redirectToLoginPage($conn, $stmt) {
     if (isset($stmt)) {

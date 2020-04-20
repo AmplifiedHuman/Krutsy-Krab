@@ -19,7 +19,7 @@ if (!isset($_SESSION['loggedIn'])) {
     <?php include("header.php") ?>
     <h1 class="generic-title header-fix">Admin Panel</h1>
     <?php
-    include("connectDB.php");
+    include("connectdb.php");
     $conn = connectToDB();
     $result = mysqli_query($conn, 'SELECT * FROM contact_responses ORDER BY date DESC');
     if ($result) {
