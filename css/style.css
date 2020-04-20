@@ -464,6 +464,7 @@ textarea {
   width: 60%;
   max-width: 600px;
   margin-bottom: 20px;
+  font-size: 0.8em;
   height: 30px;
 }
 
