@@ -19,7 +19,6 @@
     </div>
     <div class="form-outer-container generic-flex-container">
         <?php
-        include("connectDB.php");
         function printErrorAndExit()
         {
             echo "<h2 class=\"generic-caption\">Sorry, an error occured.</h2>";
@@ -30,7 +29,7 @@
             exit(-1);
         }
 
-        function printSuccessAndExit($name)
+        function printSuccessAndExit()
         {
             echo "\t<div class=\"contact-success\">\n";
             echo "\t\t<h2 class=\"generic-caption\">Your response has been recorded.</h2>";
@@ -42,50 +41,10 @@
             print "</html>";
             exit(0);
         }
-
-        function cleanseInput($data)
-        {
-            $data = trim($data);
-            $data = stripslashes($data);
-            $data = htmlspecialchars($data);
-            return $data;
-        }
-
-        function isValidName($name)
-        {
-            return $name !== "" && preg_match("/^[a-zA-Z ]*$/", $name);
-        }
-
-        function isValidEmail($email)
-        {
-            return $email !== "" && filter_var($email, FILTER_VALIDATE_EMAIL);
-        }
-
-        function isValidMessage($message)
-        {
-            return $message !== "";
-        }
-
-        function isValidEnquiry($enquiry)
-        {
-            return $enquiry !== "" && preg_match("/^(general|order|complaint|business)$/", $enquiry);
-        }
-
-        function sendMail($firstname, $lastname, $email, $enquiry, $message)
-        {
-            $myEmail = "chee.tee@ucdconnect.ie";
-            $emailBody = "Feedback Received:\n";
-            $emailBody .= "Name: $firstname $lastname\n";
-            $emailBody .= "Email: $email\n";
-            $emailBody .= "Enquiry: $enquiry\n";
-            $emailBody .= "Message:\n\n $message";
-            return mail($myEmail, $enquiry, $emailBody);
-        }
-
-        if (empty($_POST)) {
+        if (!isset($_SESSION['contacted'])) {
             $htmlForm = <<<HTML
         <form name="contact-form" class="form-container rounded normal-text" method="POST"
-        onsubmit="return validateForm()" action="#">
+        onsubmit="return validateForm()" action="sendContact.php">
             <label for="firstname">First Name</label>
             <input type="text" name="firstname" id="firstname" pattern="[A-Za-z]+" title="Letters" required>
             <label for="lastname">Last Name</label>
@@ -108,45 +67,12 @@
 
 HTML;
             echo $htmlForm;
+        } else if ($_SESSION['contacted']) {
+            $_SESSION['contacted'] = NULL;
+            printSuccessAndExit();
         } else {
-            if (isset($_POST['firstname']) && isset($_POST['lastname']) && isset($_POST['email']) && isset($_POST['enquiry']) && isset($_POST['message'])) {
-                // trim, remove special characters and slashes
-                $firstname = cleanseInput($_POST["firstname"]);
-                $lastname = cleanseInput($_POST["lastname"]);
-                $message = cleanseInput($_POST["message"]);
-                $enquiry = $_POST["enquiry"];
-                $email = cleanseInput($_POST["email"]);
-                // check values
-                if (!isValidName($firstname) || !isValidName($lastname) || !isValidEmail($email) || !isValidMessage($message) || !isValidEnquiry($enquiry)) {
-                    printErrorAndExit();
-                }
-                // only works if mail service is set up on csserver
-                if (!sendMail($firstname, $lastname, $email, $enquiry, $message)) {
-                }
-                // save to db
-                $conn = connectToDB();
-                if (!$conn) {
-                    printErrorAndExit();
-                }
-                $firstname = mysqli_real_escape_string($conn, $firstname);
-                $lastname = mysqli_real_escape_string($conn, $lastname);
-                $message = mysqli_real_escape_string($conn, $message);
-                $enquiry = mysqli_real_escape_string($conn, $enquiry);
-                $email = mysqli_real_escape_string($conn, $email);
-                $sql = "INSERT INTO contact_responses 
-                        (firstname, lastname, email, enquiry, message) 
-                        VALUES ('" . $firstname . "','" . $lastname . "', '" . $email . "', '" . $enquiry . "', '" . $message . "')
-                        ";
-                if (!mysqli_query($conn, $sql)) {
-                    mysqli_close($conn);
-                    echo mysqli_error($conn);
-                    printErrorAndExit();
-                }
-                mysqli_close($conn);
-                printSuccessAndExit($firstname);
-            } else {
-                printErrorAndExit();
-            }
+            $_SESSION['contacted'] = NULL;
+            printErrorAndExit();
         }
         ?>
     </div>

@@ -112,7 +112,7 @@
         <div class="location-details">
             <h2>Bikini Bottom</h2>
             <p>Phone: +314 159265358</p>
-            <p>Working Hours: 8am - 4pm</p>
+            <p>Working Hours: 9am - 4pm</p>
             <p>Email: <a href="mailto:example@example.com" class="email">example@example.com</a></p>
             <p>University College Dublin, Belfield, Dublin 4, Ireland</p>
         </div>
