@@ -480,7 +480,7 @@ textarea {
   background-position: center;
 }
 
-.menu-section h1 {
+.menu-section h2 {
   font-family: 'Amatic SC', cursive;
   font-size: 5em;
   padding: 70px;
@@ -520,7 +520,7 @@ textarea {
   margin: 0;
 }
 
-.menu-entry>h2 {
+.menu-entry>h3 {
   width: 100%;
   margin-top: 10px;
   font-size: 1.2em;
