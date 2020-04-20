@@ -52,9 +52,9 @@
             <a href="menu.php#bread">
                 <div class="product-entry darkpink rounded">
                     <div class="product-image-container">
-                        <span>
+                        <div>
                             <h2 class="generic-title">Fresh Bread</h2>
-                        </span>
+                        </div>
                         <img src="img/index/bread.jpg" alt="bread" class="generic-image rounded">
                     </div>
                     <h3 class="normal-text">Bread</h3>
@@ -63,9 +63,9 @@
             <a href="menu.php#cakes">
                 <div class="product-entry darkpink rounded">
                     <div class="product-image-container">
-                        <span>
+                        <div>
                             <h2 class="generic-title">Handmade Cakes</h2>
-                        </span>
+                        </div>
                         <img src="img/index/cakes.jpg" alt="cakes" class="generic-image rounded">
                     </div>
                     <h3 class="normal-text">Cakes</h3>
@@ -74,9 +74,9 @@
             <a href="menu.php#coffee">
                 <div class="product-entry darkpink rounded">
                     <div class="product-image-container">
-                        <span>
+                        <div>
                             <h2 class="generic-title">Hot Coffee</h2>
-                        </span>
+                        </div>
                         <img src="img/index/coffee.jpg" alt="coffee" class="generic-image rounded">
                     </div>
                     <h3 class="normal-text">Coffee</h3>
@@ -85,9 +85,9 @@
             <a href="menu.php#cupcakes">
                 <div class="product-entry darkpink rounded">
                     <div class="product-image-container">
-                        <span>
+                        <div>
                             <h2 class="generic-title">Sweet Cupcakes</h2>
-                        </span>
+                        </div>
                         <img src="img/index/cupcakes.jpg" alt="cupcakes" class="generic-image rounded">
                     </div>
                     <h3 class="normal-text">Cupcakes</h3>
@@ -96,9 +96,9 @@
             <a href="menu.php#desserts">
                 <div class="product-entry darkpink rounded">
                     <div class="product-image-container">
-                        <span>
+                        <div>
                             <h2 class="generic-title">Homemade Desserts</h2>
-                        </span>
+                        </div>
                         <img src="img/index/desserts.jpg" alt="desserts" class="generic-image rounded">
                     </div>
                     <h3 class="normal-text">Desserts</h3>

@@ -280,7 +280,7 @@ nav.small>div {
   position: relative;
 }
 
-.product-image-container>span {
+.product-image-container>div {
   transform: translate(-50%, -50%);
   z-index: 3;
   opacity: 0;
@@ -295,7 +295,7 @@ nav.small>div {
   color: #f7f7ff;
 }
 
-.product-image-container:hover>span {
+.product-image-container:hover>div {
   opacity: 1;
 }
 
