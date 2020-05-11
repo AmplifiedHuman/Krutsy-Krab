@@ -31,7 +31,7 @@
                     echo '<p class="login-error">Incorrect username or password.</p>';
                     $_SESSION['attempt'] = FALSE;
                     unset($_SESSION['attempt']);
-                } else if (isset($_SESSION['loggedIn']) && $_SESSION['loggedIn']) {
+                } elseif (isset($_SESSION['loggedIn']) && $_SESSION['loggedIn']) {
                     echo '<p class="login-success">You\'re already logged in.</p>';
                 }
             }

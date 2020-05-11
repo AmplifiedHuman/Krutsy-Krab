@@ -66,7 +66,7 @@
 
 HTML;
             echo $htmlForm;
-        } else if ($_SESSION['contacted']) {
+        } elseif ($_SESSION['contacted']) {
             $_SESSION['contacted'] = NULL;
             printSuccessAndExit();
         } else {
