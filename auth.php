@@ -1,8 +1,5 @@
 <?php
 session_start();
-/**
- * ***REMOVED*** 
- */
 // connect to DB function
 include("connectdb.php");
 
