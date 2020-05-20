@@ -5,8 +5,6 @@ include('connectdb.php');
 function cleanseInput($data)
 {
     $data = trim($data);
-    $data = stripslashes($data);
-    $data = htmlspecialchars($data);
     return $data;
 }
 
@@ -41,7 +39,8 @@ function sendMail($firstname, $lastname, $email, $enquiry, $message)
     return mail($myEmail, $enquiry, $emailBody);
 }
 
-function redirectToContact($conn) {
+function redirectToContact($conn)
+{
     if (isset($conn)) {
         mysqli_close($conn);
     }
@@ -61,7 +60,7 @@ if (isset($_POST['firstname']) && isset($_POST['lastname']) && isset($_POST['ema
         $_SESSION['contacted'] = FALSE;
         redirectToContact($conn);
     }
-    // only works if mail service is set up on csserver
+    // send mail to personal email
     sendMail($firstname, $lastname, $email, $enquiry, $message);
     // save to db
     $conn = connectToDB();
@@ -69,16 +68,9 @@ if (isset($_POST['firstname']) && isset($_POST['lastname']) && isset($_POST['ema
         $_SESSION['contacted'] = FALSE;
         redirectToContact($conn);
     }
-    $firstname = mysqli_real_escape_string($conn, $firstname);
-    $lastname = mysqli_real_escape_string($conn, $lastname);
-    $message = mysqli_real_escape_string($conn, $message);
-    $enquiry = mysqli_real_escape_string($conn, $enquiry);
-    $email = mysqli_real_escape_string($conn, $email);
-    $sql = "INSERT INTO contact_responses 
-                        (firstname, lastname, email, enquiry, message) 
-                        VALUES ('" . $firstname . "','" . $lastname . "', '" . $email . "', '" . $enquiry . "', '" . $message . "')
-                        ";
-    if (!mysqli_query($conn, $sql)) {
+    $stmt = mysqli_prepare($conn, "INSERT INTO contact_responses (firstname, lastname, email, enquiry, message) VALUES (?, ?, ?, ?, ?)");
+    mysqli_stmt_bind_param($stmt, 'sssss', $firstname, $lastname, $email, $enquiry, $message);
+    if (!mysqli_stmt_execute($stmt)) {
         $_SESSION['contacted'] = FALSE;
         redirectToContact($conn);
     }
@@ -88,5 +80,3 @@ if (isset($_POST['firstname']) && isset($_POST['lastname']) && isset($_POST['ema
     $_SESSION['contacted'] = FALSE;
     redirectToContact(NULL);
 }
-
-?>
