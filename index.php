@@ -21,12 +21,11 @@
         </div>
     </div>
     <div class="normal-text intro-text">
-        Our story began in 1994. Upon finishing their culinary studies in Paris, Gastón Acurio and Astrid Gutsche
-        founded their
-        eponymous restaurant in a small house in the district of Miraflores. At first, the restaurant was quite French,
-        as it
-        was dictated by the global trend. Over time, it became decidedly Peruvian. We embraced our culture and flavors,
-        experimenting with local ingredients and recipes with one goal in mind, to promote our cuisine around the world.
+        Our story began in 1971. Upon finishing their culinary studies in Bikini Bottom, Michael and Susan 
+        founded their eponymous restaurant in a small house. At first, the restaurant was quite French, as 
+        it was dictated by the global trend. Over time, it became decidedly Peruvian. We embraced our culture 
+        and flavours, experimenting with local ingredients and recipes with one goal in mind, to promote our 
+        cuisine around the world.
     </div>
     <div class="lightpink generic-flex-container intro-container">
         <div class="intro-entry rounded">
