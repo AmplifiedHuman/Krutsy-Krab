@@ -17,8 +17,8 @@ function checkAndResetAutoIncrement($conn) {
     }
 }
 
-// redirect if unauthorised
-if (!isset($_SESSION['loggedIn'])) {
+// redirect if unauthorised or not logged in
+if (!isset($_SESSION['loggedIn']) || empty($_SESSION['authorised'])) {
     header('Location: index.php');
     exit;
 }

@@ -3,7 +3,8 @@ session_start();
 // connect to DB function
 include("connectdb.php");
 
-function redirectToLoginPage($conn, $stmt) {
+function redirectToLoginPage($conn, $stmt)
+{
     if (isset($stmt)) {
         mysqli_stmt_free_result($stmt);
         mysqli_stmt_close($stmt);
@@ -23,7 +24,7 @@ if ($conn && !(isset($_POST['username']) && isset($_POST['password']))) {
 $username = $_POST['username'];
 $password = $_POST['password'];
 // use prepare to prevent SQLi
-$stmt = mysqli_prepare($conn, 'SELECT password_hash FROM admin_accounts WHERE username=?');
+$stmt = mysqli_prepare($conn, 'SELECT password_hash,authorised FROM admin_accounts WHERE username=?');
 // bind parameter, execute sql, save result
 mysqli_stmt_bind_param($stmt, 's', $username);
 mysqli_stmt_execute($stmt);
@@ -31,7 +32,7 @@ mysqli_stmt_store_result($stmt);
 // check matches
 if (mysqli_stmt_num_rows($stmt) > 0) {
     // bind and fetch
-    mysqli_stmt_bind_result($stmt, $password_hash);
+    mysqli_stmt_bind_result($stmt, $password_hash, $authorised);
     mysqli_stmt_fetch($stmt);
     // verify pass
     if (password_verify($password, $password_hash)) {
@@ -39,6 +40,9 @@ if (mysqli_stmt_num_rows($stmt) > 0) {
         session_regenerate_id();
         $_SESSION["loggedIn"] = TRUE;
         $_SESSION["username"] = $username;
+        if ($authorised) {
+            $_SESSION["authorised"] = TRUE;
+        }
         // success redirect to admin page
         header('Location: admin.php');
     } else {
