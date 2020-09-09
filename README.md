@@ -1,5 +1,5 @@
 # Krutsy-Krab
-A mock food business website I created.
+A mock food business website I created using PHP, CSS and Javascript.
 
 ![Front Page](./frontpage.jpg)
 
